@@ -93,13 +93,13 @@ for epoch in range(100):
 
         err.append( loss )
 
-    print "Epoch: %d, Loss: %.8f, Time: %.4fs" % (
-                epoch, np.mean( err ), time.clock()-t0 )
+    print("Epoch: %d, Loss: %.8f, Time: %.4fs" % (
+                epoch, np.mean( err ), time.clock()-t0 ))
 
 # Try to predict something
 
 x = np.random.binomial(1, 0.5, n_in)
-print "XOR prediction:"
-print x
-print predict(x, *params)
+print("XOR prediction:")
+print(x)
+print(predict(x, *params))
 
